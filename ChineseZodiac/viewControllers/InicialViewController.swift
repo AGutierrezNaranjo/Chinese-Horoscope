@@ -18,19 +18,20 @@ class InicialViewController: UIViewController {
     @IBOutlet weak var discoverButtonOutlet: UIButton!
     
     @IBAction func datePicker(_ sender: UIDatePicker) {
-        dateSelected=sender.date
-        discoverButtonOutlet.isEnabled=true
+        //dateSelected=sender.date
+       
     }
     
-    @IBAction func discoverButton(_ sender: Any) {
-        var animalSelected = animalForDate(dateSelected!)
-        performSegue(withIdentifier: "toZodiac", sender: self)
+    @IBAction func discoverButton(_ sender: UIButton) {
+       dateSelected=datePickerOutlet.date
+              animalSelected = animalForDate(dateSelected!)
+              performSegue(withIdentifier: "toZodiac", sender: self)
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        dateSelected=datePickerOutlet.date
     }
 
     // MARK: - Navigation

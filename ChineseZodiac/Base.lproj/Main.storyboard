@@ -145,8 +145,8 @@
                             </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="SWm-FR-DFS">
                                 <rect key="frame" x="47" y="218" width="320" height="216"/>
-                                <date key="minimumDate" timeIntervalSinceReferenceDate="-56865671925">
-                                    <!--0199-01-01 12:01:15 +0000-->
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-347112000">
+                                    <!--1990-01-01 12:00:00 +0000-->
                                 </date>
                                 <date key="maximumDate" timeIntervalSinceReferenceDate="-46800">
                                     <!--2000-12-31 11:00:00 +0000-->
@@ -180,7 +180,7 @@
             </objects>
             <point key="canvasLocation" x="-668.11594202898561" y="-269.19642857142856"/>
         </scene>
-        <!--Your Zodiac View Controller-->
+        <!--Tu Animal-->
         <scene sceneID="su4-Fv-It9">
             <objects>
                 <viewController id="Zz0-rm-rEC" customClass="yourZodiacViewController" customModule="ChineseZodiac" customModuleProvider="target" sceneMemberID="viewController">
@@ -188,14 +188,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tu animal es:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWK-OX-tpN">
-                                <rect key="frame" x="157" y="139" width="100" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="cqZ-ff-LlS">
-                                <rect key="frame" x="87" y="201" width="240" height="128"/>
+                                <rect key="frame" x="87" y="201" width="1260" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="PQU-UE-8JX"/>
                                 </constraints>
@@ -266,33 +260,39 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgg-Rh-ZuU">
-                                <rect key="frame" x="147.5" y="758" width="119" height="30"/>
+                                <rect key="frame" x="148" y="758" width="1138" height="30"/>
                                 <state key="normal" title="Compatibilidades"/>
                                 <connections>
                                     <action selector="compatibilityButton:" destination="Zz0-rm-rEC" eventType="touchUpInside" id="yMX-Sp-Lwd"/>
                                     <segue destination="vOR-eK-1lI" kind="presentation" id="HdA-Mk-sdl"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWK-OX-tpN">
+                                <rect key="frame" x="122" y="132" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="DC2-C4-mVX" firstAttribute="trailing" secondItem="aP1-V4-CKq" secondAttribute="trailing" id="2Vw-Dt-mcn"/>
                             <constraint firstItem="aP1-V4-CKq" firstAttribute="leading" secondItem="DC2-C4-mVX" secondAttribute="leading" id="4JJ-6v-jVW"/>
-                            <constraint firstItem="CWK-OX-tpN" firstAttribute="centerX" secondItem="D0K-Jz-jcR" secondAttribute="centerX" id="6e8-sr-Cza"/>
                             <constraint firstItem="aP1-V4-CKq" firstAttribute="width" secondItem="D0K-Jz-jcR" secondAttribute="width" id="BGc-gG-V4D"/>
                             <constraint firstItem="DC2-C4-mVX" firstAttribute="bottom" secondItem="Jgg-Rh-ZuU" secondAttribute="bottom" constant="74" id="Cbg-y2-gZm"/>
-                            <constraint firstItem="cqZ-ff-LlS" firstAttribute="centerX" secondItem="CWK-OX-tpN" secondAttribute="centerX" id="Tyk-xZ-eJe"/>
-                            <constraint firstItem="cqZ-ff-LlS" firstAttribute="top" secondItem="CWK-OX-tpN" secondAttribute="bottom" constant="41" id="Zye-5k-B2l"/>
                             <constraint firstItem="Jgg-Rh-ZuU" firstAttribute="leading" relation="lessThanOrEqual" secondItem="DC2-C4-mVX" secondAttribute="leading" constant="148" id="apF-bM-VJZ"/>
-                            <constraint firstItem="CWK-OX-tpN" firstAttribute="top" secondItem="DC2-C4-mVX" secondAttribute="top" constant="51" id="gjE-7o-vtP"/>
+                            <constraint firstItem="CWK-OX-tpN" firstAttribute="centerX" secondItem="aP1-V4-CKq" secondAttribute="centerX" id="cx2-7j-wN4"/>
+                            <constraint firstItem="CWK-OX-tpN" firstAttribute="leading" secondItem="DC2-C4-mVX" secondAttribute="leading" constant="122" id="hhO-p8-7TW"/>
                             <constraint firstItem="cqZ-ff-LlS" firstAttribute="centerX" secondItem="Jgg-Rh-ZuU" secondAttribute="centerX" id="jtA-4d-N1e"/>
                             <constraint firstItem="aP1-V4-CKq" firstAttribute="top" secondItem="cqZ-ff-LlS" secondAttribute="bottom" constant="78" id="k63-oc-dJi"/>
+                            <constraint firstItem="CWK-OX-tpN" firstAttribute="top" secondItem="DC2-C4-mVX" secondAttribute="top" constant="44" id="mk6-66-0ui"/>
+                            <constraint firstItem="cqZ-ff-LlS" firstAttribute="top" secondItem="CWK-OX-tpN" secondAttribute="bottom" constant="48" id="pAz-sg-ESL"/>
                             <constraint firstItem="cqZ-ff-LlS" firstAttribute="top" secondItem="D0K-Jz-jcR" secondAttribute="top" constant="201" id="pJE-Ks-lQ3"/>
                             <constraint firstItem="cqZ-ff-LlS" firstAttribute="leading" secondItem="DC2-C4-mVX" secondAttribute="leading" constant="87" id="tjf-y2-p4e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DC2-C4-mVX"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rjV-5N-vSW"/>
+                    <navigationItem key="navigationItem" title="Tu Animal" id="rjV-5N-vSW"/>
                     <connections>
                         <outlet property="ElementLabelOutlet" destination="cUi-CA-CIn" id="YxT-DF-m3m"/>
                         <outlet property="aspectLabelOutlet" destination="tI6-wA-eNf" id="gaO-uh-IaZ"/>

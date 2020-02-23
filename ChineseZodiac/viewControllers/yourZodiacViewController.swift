@@ -27,8 +27,10 @@ class yourZodiacViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        nameLabelOutlet.text="Tu animal es: \n \(String(describing: animalChosen?.nameToString))"
+        
+        nameLabelOutlet.text=" \(String(animalChosen!.nameToString))"
+        
+        
     }
     
 
