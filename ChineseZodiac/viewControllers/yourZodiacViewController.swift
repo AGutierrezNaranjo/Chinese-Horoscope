@@ -11,8 +11,10 @@ import UIKit
 class yourZodiacViewController: UIViewController {
 
     var birthDate:Date?
+    var animalChosen:Zodiac.Animal?
     
     
+
     @IBOutlet weak var nameLabelOutlet: UILabel!
     @IBOutlet weak var imageAnimalOutlet: UIImageView!
     @IBOutlet weak var ElementLabelOutlet: UILabel!
@@ -26,7 +28,7 @@ class yourZodiacViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        nameLabelOutlet.text="Tu animal es: \n \(String(describing: animalChosen?.nameToString))"
     }
     
 

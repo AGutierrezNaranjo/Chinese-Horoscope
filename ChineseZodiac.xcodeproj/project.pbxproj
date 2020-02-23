@@ -15,6 +15,7 @@
 		C72BC12723FE7396008C5ACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72BC12523FE7396008C5ACD /* LaunchScreen.storyboard */; };
 		C7C4BD1B24027CBB0016928E /* yourZodiacViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4BD1A24027CBB0016928E /* yourZodiacViewController.swift */; };
 		C7C4BD1D24027F560016928E /* animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4BD1C24027F560016928E /* animal.swift */; };
+		C7C4BD1F240298450016928E /* ZodiacSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4BD1E240298450016928E /* ZodiacSelection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C72BC12823FE7396008C5ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7C4BD1A24027CBB0016928E /* yourZodiacViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yourZodiacViewController.swift; sourceTree = "<group>"; };
 		C7C4BD1C24027F560016928E /* animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animal.swift; sourceTree = "<group>"; };
+		C7C4BD1E240298450016928E /* ZodiacSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacSelection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				C7C4BD1C24027F560016928E /* animal.swift */,
+				C7C4BD1E240298450016928E /* ZodiacSelection.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				C7C4BD1B24027CBB0016928E /* yourZodiacViewController.swift in Sources */,
 				C72BC11B23FE7394008C5ACD /* AppDelegate.swift in Sources */,
 				C72BC11D23FE7394008C5ACD /* SceneDelegate.swift in Sources */,
+				C7C4BD1F240298450016928E /* ZodiacSelection.swift in Sources */,
 				C7C4BD1D24027F560016928E /* animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

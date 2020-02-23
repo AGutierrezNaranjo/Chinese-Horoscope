@@ -122,14 +122,4 @@ struct Zodiac {
     init(as image: Animal) {
         self.animalImage = image
     }
-    
-    
-    
-    func animalForDate(_ date: Date) -> Animal {
-        <#function body#>
-    }
-    
-    
-    
-    
 }

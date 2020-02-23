@@ -10,23 +10,23 @@ import UIKit
 
 class InicialViewController: UIViewController {
 
-    
+    var dateSelected:Date?
+    var animalSelected:Zodiac.Animal?
     
     @IBOutlet weak var instructionLabelOutlet: UILabel!
     @IBOutlet weak var datePickerOutlet: UIDatePicker!
     @IBOutlet weak var discoverButtonOutlet: UIButton!
     
-    @IBAction func datePicker(_ sender: Any) {
+    @IBAction func datePicker(_ sender: UIDatePicker) {
+        dateSelected=sender.date
         discoverButtonOutlet.isEnabled=true
     }
+    
     @IBAction func discoverButton(_ sender: Any) {
-        
+        var animalSelected = animalForDate(dateSelected!)
         performSegue(withIdentifier: "toZodiac", sender: self)
         
     }
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +38,7 @@ class InicialViewController: UIViewController {
       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
           guard let yourZodiacViewController = segue.destination as? yourZodiacViewController else { return }
           
-          yourZodiacViewController.birthDate = datePickerOutlet.date
+          yourZodiacViewController.animalChosen=animalSelected
          
       }
 
