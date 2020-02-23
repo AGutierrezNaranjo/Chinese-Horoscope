@@ -12,6 +12,9 @@ class InicialViewController: UIViewController {
 
     var dateSelected:Date?
     var animalSelected:Zodiac.Animal?
+    var aspectSelected:Zodiac.Aspect?
+    var elementSelected:Zodiac.Element?
+    
     
     @IBOutlet weak var instructionLabelOutlet: UILabel!
     @IBOutlet weak var datePickerOutlet: UIDatePicker!
@@ -25,6 +28,8 @@ class InicialViewController: UIViewController {
     @IBAction func discoverButton(_ sender: UIButton) {
        dateSelected=datePickerOutlet.date
               animalSelected = animalForDate(dateSelected!)
+              aspectSelected = aspectForDate(dateSelected!)
+              elementSelected = elementForDate(dateSelected!)
               performSegue(withIdentifier: "toZodiac", sender: self)
         
     }
@@ -36,10 +41,12 @@ class InicialViewController: UIViewController {
 
     // MARK: - Navigation
 
-      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-          guard let yourZodiacViewController = segue.destination as? yourZodiacViewController else { return }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let yourZodiacViewController = segue.destination as? yourZodiacViewController else { return }
           
-          yourZodiacViewController.animalChosen=animalSelected
+        yourZodiacViewController.animalChosen=animalSelected
+        yourZodiacViewController.aspectChosen=aspectSelected
+        yourZodiacViewController.elementChosen=elementSelected
          
       }
 

@@ -11,8 +11,6 @@ import Foundation
 struct Zodiac {
     var animalImage: Animal
     
-//     var compatibleAnimal1:Animal
-//     var compatibleAnimal2:Animal
     
      enum Animal{
            case horse
@@ -31,7 +29,7 @@ struct Zodiac {
         
        
         
-           var description: String {
+           var characteristic: String {
                
                switch self{
                case .horse:
@@ -63,31 +61,31 @@ struct Zodiac {
            
         var compatible: String{
         switch self{
-        case .horse:
-            return "mono compatible con rata y dragón???"
-        case .monkey:
-            return "mono compatible con rata y dragón"
-        case .dragon:
-            return "dragón compatible con rata y mono"
-        case .rat:
-            return "rata compatible con dragón y mono"
-        case .ox:
-            return "buey compatible con serpiente y gallo"
-        case .snake:
-            return "serpiente compatible con gallo y buey"
-        case .rabbit:
-            return "conejo compatible con cerdo y oveja"
-        case .dog:
-            return "perro compatible con tigre y caballo"
-        case .rooster:
-            return "gallo compatible con serpiente y buey"
-        case .pig:
-            return "cerdo compatible con conejo y oveja"
-        case .goat:
-            return "oveja compatible con cerdo y conejo"
-        case .tiger:
-            return "tigre compatible con caballo y perro"
-        }
+            case .horse:
+                return "mono compatible con rata y dragón???"
+            case .monkey:
+             return "mono compatible con rata y dragón"
+            case .dragon:
+                return "dragón compatible con rata y mono"
+            case .rat:
+                return "rata compatible con dragón y mono"
+            case .ox:
+                return "buey compatible con serpiente y gallo"
+            case .snake:
+                return "serpiente compatible con gallo y buey"
+            case .rabbit:
+                return "conejo compatible con cerdo y oveja"
+            case .dog:
+                return "perro compatible con tigre y caballo"
+            case .rooster:
+                return "gallo compatible con serpiente y buey"
+            case .pig:
+                return "cerdo compatible con conejo y oveja"
+            case .goat:
+                return "oveja compatible con cerdo y conejo"
+            case .tiger:
+                return "tigre compatible con caballo y perro"
+            }
         }
            var nameToString: String {
                
@@ -119,7 +117,46 @@ struct Zodiac {
                }
            }
        }
-    init(as image: Animal) {
-        self.animalImage = image
+    
+    enum Aspect {
+        
+        case ying
+        case yang
+        
+        var aspectToString:String{
+            switch self {
+            case .ying:
+                return "Ying"
+            default:
+                return "Yang"
+            }
+        }
     }
+    
+    enum Element {
+        case metal
+        case wood
+        case water
+        case fire
+        case earth
+        
+        var elemetToString:String{
+            switch self {
+            case .metal:
+                return "Metal"
+            case .wood:
+                return "Madera"
+            case .water:
+                return "Agua"
+            case .fire:
+                return "Fuego"
+            case .earth:
+                return "Tierra"
+            }
+        }
+        
+    }
+   // init(as image: Animal) {
+   //     self.animalImage = image
+   // }
 }

@@ -12,7 +12,8 @@ class yourZodiacViewController: UIViewController {
 
     var birthDate:Date?
     var animalChosen:Zodiac.Animal?
-    
+    var elementChosen:Zodiac.Element?
+    var aspectChosen:Zodiac.Aspect?
     
 
     @IBOutlet weak var nameLabelOutlet: UILabel!
@@ -21,7 +22,7 @@ class yourZodiacViewController: UIViewController {
     @IBOutlet weak var aspectLabelOutlet: UILabel!
     @IBOutlet weak var characteristicLabelOutlet: UILabel!
     
-    @IBAction func compatibilityButton(_ sender: Any) {
+    @IBAction func compatibilityButton(_ sender: UIButton) {
         
     }
     
@@ -29,7 +30,10 @@ class yourZodiacViewController: UIViewController {
         super.viewDidLoad()
         
         nameLabelOutlet.text=" \(String(animalChosen!.nameToString))"
-        
+        imageAnimalOutlet.image=UIImage(named: animalChosen!.nameToString.lowercased())
+        ElementLabelOutlet.text=elementChosen!.elemetToString
+        aspectLabelOutlet.text=aspectChosen!.aspectToString
+        characteristicLabelOutlet.text = animalChosen!.characteristic
         
     }
     
