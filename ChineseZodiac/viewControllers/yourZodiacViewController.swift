@@ -10,6 +10,8 @@ import UIKit
 
 class yourZodiacViewController: UIViewController {
 
+    var birthDate:Date?
+    
     
     @IBOutlet weak var nameLabelOutlet: UILabel!
     @IBOutlet weak var imageAnimalOutlet: UIImageView!

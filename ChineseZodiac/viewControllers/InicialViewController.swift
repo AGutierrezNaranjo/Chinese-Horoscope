@@ -20,12 +20,9 @@ class InicialViewController: UIViewController {
         discoverButtonOutlet.isEnabled=true
     }
     @IBAction func discoverButton(_ sender: Any) {
-        let pickerDate = datePickerOutlet.date
-        for animal in animals {
-            if (animal.dateFrom ... animal.dateTo).contains(pickerDate) {
-                ViewController.userAnimal = animal
-            }
-        }
+        
+        performSegue(withIdentifier: "toZodiac", sender: self)
+        
     }
     
     
@@ -36,6 +33,14 @@ class InicialViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    // MARK: - Navigation
+
+      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+          guard let yourZodiacViewController = segue.destination as? yourZodiacViewController else { return }
+          
+          yourZodiacViewController.birthDate = datePickerOutlet.date
+         
+      }
 
 }
 
