@@ -23,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="-1455" y="-269"/>
         </scene>
-        <!--¿Cual es tu horosopo chino-->
+        <!--¿Cual es tu horosopo chino?-->
         <scene sceneID="zEq-LV-HpL">
             <objects>
                 <viewController id="dyP-SJ-spH" customClass="InicialViewController" customModule="ChineseZodiac" customModuleProvider="target" sceneMemberID="viewController">
@@ -71,7 +71,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EE5-fS-J2t"/>
                     </view>
-                    <navigationItem key="navigationItem" title="¿Cual es tu horosopo chino" id="1dl-W5-dtT"/>
+                    <navigationItem key="navigationItem" title="¿Cual es tu horosopo chino?" id="1dl-W5-dtT"/>
                     <connections>
                         <outlet property="datePickerOutlet" destination="SWm-FR-DFS" id="eq3-98-jI6"/>
                         <outlet property="discoverButtonOutlet" destination="Vut-ea-SjL" id="ey7-61-tbG"/>
@@ -85,7 +85,7 @@
         <!--Tu Animal-->
         <scene sceneID="su4-Fv-It9">
             <objects>
-                <viewController id="Zz0-rm-rEC" customClass="yourZodiacViewController" customModule="ChineseZodiac" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Zz0-rm-rEC" customClass="YourZodiacViewController" customModule="ChineseZodiac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D0K-Jz-jcR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,7 +112,7 @@
                                                 <rect key="frame" x="138" y="0.0" width="276" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
+                                                <color key="highlightedColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </label>
                                         </subviews>
                                     </stackView>
@@ -129,7 +129,7 @@
                                                 <rect key="frame" x="138" y="0.0" width="276" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
+                                                <color key="highlightedColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </label>
                                         </subviews>
                                         <constraints>
@@ -149,7 +149,7 @@
                                                 <rect key="frame" x="100.5" y="0.0" width="313.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
+                                                <color key="highlightedColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </label>
                                         </subviews>
                                         <constraints>
@@ -164,7 +164,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgg-Rh-ZuU">
                                 <rect key="frame" x="144" y="756" width="126" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Compatibilidades"/>
+                                <state key="normal" title="Compatibilidades">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="compatibilityButton:" destination="Zz0-rm-rEC" eventType="touchUpInside" id="yMX-Sp-Lwd"/>
                                     <segue destination="cum-vQ-I4E" kind="presentation" identifier="toCompatibles" id="aYx-yo-ubC"/>
@@ -174,7 +176,7 @@
                                 <rect key="frame" x="122" y="132" width="170" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="highlightedColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -254,13 +256,13 @@
                                 <rect key="frame" x="104" y="90" width="206.5" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="highlightedColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Bz-dv-OZ1">
                                 <rect key="frame" x="183" y="508.5" width="48" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="highlightedColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

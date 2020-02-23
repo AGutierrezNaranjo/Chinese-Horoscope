@@ -14,7 +14,7 @@
 		C72BC12423FE7396008C5ACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C72BC12323FE7396008C5ACD /* Assets.xcassets */; };
 		C72BC12723FE7396008C5ACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72BC12523FE7396008C5ACD /* LaunchScreen.storyboard */; };
 		C79E356F2403271200935297 /* CompatibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E356E2403271200935297 /* CompatibleViewController.swift */; };
-		C7C4BD1B24027CBB0016928E /* yourZodiacViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4BD1A24027CBB0016928E /* yourZodiacViewController.swift */; };
+		C7C4BD1B24027CBB0016928E /* YourZodiacViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4BD1A24027CBB0016928E /* YourZodiacViewController.swift */; };
 		C7C4BD1D24027F560016928E /* animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4BD1C24027F560016928E /* animal.swift */; };
 		C7C4BD1F240298450016928E /* ZodiacSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C4BD1E240298450016928E /* ZodiacSelection.swift */; };
 /* End PBXBuildFile section */
@@ -29,7 +29,7 @@
 		C72BC12623FE7396008C5ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C72BC12823FE7396008C5ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C79E356E2403271200935297 /* CompatibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompatibleViewController.swift; sourceTree = "<group>"; };
-		C7C4BD1A24027CBB0016928E /* yourZodiacViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yourZodiacViewController.swift; sourceTree = "<group>"; };
+		C7C4BD1A24027CBB0016928E /* YourZodiacViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourZodiacViewController.swift; sourceTree = "<group>"; };
 		C7C4BD1C24027F560016928E /* animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animal.swift; sourceTree = "<group>"; };
 		C7C4BD1E240298450016928E /* ZodiacSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacSelection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				C72BC11E23FE7394008C5ACD /* InicialViewController.swift */,
-				C7C4BD1A24027CBB0016928E /* yourZodiacViewController.swift */,
+				C7C4BD1A24027CBB0016928E /* YourZodiacViewController.swift */,
 				C79E356E2403271200935297 /* CompatibleViewController.swift */,
 			);
 			path = viewControllers;
@@ -168,7 +168,7 @@
 			files = (
 				C72BC11F23FE7394008C5ACD /* InicialViewController.swift in Sources */,
 				C79E356F2403271200935297 /* CompatibleViewController.swift in Sources */,
-				C7C4BD1B24027CBB0016928E /* yourZodiacViewController.swift in Sources */,
+				C7C4BD1B24027CBB0016928E /* YourZodiacViewController.swift in Sources */,
 				C72BC11B23FE7394008C5ACD /* AppDelegate.swift in Sources */,
 				C72BC11D23FE7394008C5ACD /* SceneDelegate.swift in Sources */,
 				C7C4BD1F240298450016928E /* ZodiacSelection.swift in Sources */,

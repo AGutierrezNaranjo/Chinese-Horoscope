@@ -9,7 +9,7 @@
 import UIKit
 
 class InicialViewController: UIViewController {
-
+    
     var dateSelected:Date?
     var animalSelected:Zodiac.Animal?
     var aspectSelected:Zodiac.Aspect?
@@ -22,33 +22,34 @@ class InicialViewController: UIViewController {
     
     @IBAction func datePicker(_ sender: UIDatePicker) {
         //dateSelected=sender.date
-       
+        
     }
     
     @IBAction func discoverButton(_ sender: UIButton) {
-       dateSelected=datePickerOutlet.date
-              animalSelected = animalForDate(dateSelected!)
-              aspectSelected = aspectForDate(dateSelected!)
-              elementSelected = elementForDate(dateSelected!)
-              performSegue(withIdentifier: "toZodiac", sender: self)
+        dateSelected = datePickerOutlet.date
+        animalSelected = animalForDate(dateSelected!)
+        aspectSelected = aspectForDate(dateSelected!)
+        elementSelected = elementForDate(dateSelected!)
+        
+        // performSegue(withIdentifier: "toZodiac", sender: self)
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dateSelected=datePickerOutlet.date
+        //dateSelected=datePickerOutlet.date
     }
-
+    
     // MARK: - Navigation
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let yourZodiacViewController = segue.destination as? yourZodiacViewController else { return }
-          
+        guard let yourZodiacViewController = segue.destination as? YourZodiacViewController else { return }
+        
         yourZodiacViewController.animalChosen=animalSelected
         yourZodiacViewController.aspectChosen=aspectSelected
         yourZodiacViewController.elementChosen=elementSelected
-         
-      }
-
+        
+    }
+    
 }
 

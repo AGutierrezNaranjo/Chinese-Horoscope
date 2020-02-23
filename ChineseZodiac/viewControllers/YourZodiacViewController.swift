@@ -8,14 +8,14 @@
 
 import UIKit
 
-class yourZodiacViewController: UIViewController {
-
+class YourZodiacViewController: UIViewController {
+    
     var birthDate:Date?
     var animalChosen:Zodiac.Animal?
     var elementChosen:Zodiac.Element?
     var aspectChosen:Zodiac.Aspect?
     
-
+    
     @IBOutlet weak var nameLabelOutlet: UILabel!
     @IBOutlet weak var imageAnimalOutlet: UIImageView!
     @IBOutlet weak var ElementLabelOutlet: UILabel!
@@ -25,6 +25,7 @@ class yourZodiacViewController: UIViewController {
     @IBAction func compatibilityButton(_ sender: UIButton) {
         performSegue(withIdentifier: "toCompatibles", sender: self)
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,15 +38,14 @@ class yourZodiacViewController: UIViewController {
         
     }
     
-
+    
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       guard let destination = segue.destination as? CompatibleViewController else{return}
+        guard let destination = segue.destination as? CompatibleViewController else{return}
         destination.compatibleAnimals=animalChosen!.compatibleAnimals
         
-      
-       
     }
-
+    @IBAction func unwindToGame(undwiSegue: UIStoryboardSegue){
+    }
 }
