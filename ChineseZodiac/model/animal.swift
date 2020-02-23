@@ -59,32 +59,33 @@ struct Zodiac {
                }
            }
            
-        var compatible: String{
-        switch self{
-            case .horse:
-                return "mono compatible con rata y dragón???"
-            case .monkey:
-             return "mono compatible con rata y dragón"
-            case .dragon:
-                return "dragón compatible con rata y mono"
-            case .rat:
-                return "rata compatible con dragón y mono"
-            case .ox:
-                return "buey compatible con serpiente y gallo"
-            case .snake:
-                return "serpiente compatible con gallo y buey"
-            case .rabbit:
-                return "conejo compatible con cerdo y oveja"
-            case .dog:
-                return "perro compatible con tigre y caballo"
-            case .rooster:
-                return "gallo compatible con serpiente y buey"
-            case .pig:
-                return "cerdo compatible con conejo y oveja"
-            case .goat:
-                return "oveja compatible con cerdo y conejo"
-            case .tiger:
-                return "tigre compatible con caballo y perro"
+        var compatibleAnimals: [Animal]{
+            
+            switch self{
+                case .horse:
+                    return [.tiger,.dog]
+                case .monkey:
+                    return [.rat,.dragon]
+                case .dragon:
+                    return [.rat,.monkey]
+                case .rat:
+                    return [.dragon,.monkey]
+                case .ox:
+                    return [.snake,.rooster]
+                case .snake:
+                    return [.rooster,.ox]
+                case .rabbit:
+                    return [.pig,.goat]
+                case .dog:
+                    return [.tiger,.horse]
+                case .rooster:
+                    return [.snake,.ox]
+                case .pig:
+                    return [.rabbit,.goat]
+                case .goat:
+                    return [.pig,.rabbit]
+                case .tiger:
+                    return [.horse,.dog]
             }
         }
            var nameToString: String {

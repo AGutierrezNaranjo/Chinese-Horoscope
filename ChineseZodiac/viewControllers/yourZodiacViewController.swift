@@ -23,7 +23,7 @@ class yourZodiacViewController: UIViewController {
     @IBOutlet weak var characteristicLabelOutlet: UILabel!
     
     @IBAction func compatibilityButton(_ sender: UIButton) {
-        
+        performSegue(withIdentifier: "toCompatibles", sender: self)
     }
     
     override func viewDidLoad() {
@@ -40,6 +40,12 @@ class yourZodiacViewController: UIViewController {
 
     
     // MARK: - Navigation
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       guard let destination = segue.destination as? CompatibleViewController else{return}
+        destination.compatibleAnimals=animalChosen!.compatibleAnimals
+        
+      
+       
+    }
 
 }
